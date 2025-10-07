@@ -39,6 +39,7 @@ class EggThread extends Thread {
     public void run() {
         for (int i = 0; i < 5; i++) {
             System.out.println("Яйцо");
+            Main.setLastWord("Яйцо");
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
@@ -53,6 +54,7 @@ class ChickenThread extends Thread {
     public void run() {
         for (int i = 0; i < 5; i++) {
             System.out.println("Курица");
+            Main.setLastWord("Курица");
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
